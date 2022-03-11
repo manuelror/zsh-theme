@@ -16,7 +16,7 @@ Example:
 1.  Clone this repository
 2.  Move theme file to your Oh-My-Zsh instalation themes folder:
 
-        mv path/to/manuel.zsh-theme ~/.oh-my-zsh/themes/
+        cp path/to/manuel.zsh-theme ~/.oh-my-zsh/themes/
 
 3.  Edit the `ZSH_THEME` var in your `.zshrc` file in order to match the theme:
 
