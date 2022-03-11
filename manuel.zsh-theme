@@ -17,7 +17,7 @@ if [ -e ~/.gvm/bin/gvm-prompt ]; then
   GO_PROMPT_="%{$fg_bold[blue]%}gvm:(%{$fg[green]%}\$(~/.gvm/bin/gvm-prompt v g)%{$fg_bold[blue]%})%{$reset_color%} "
 fi
 
-# Get the nvm version
+# Get the current node version with NVM
 if [ -s ~/.nvm/nvm.sh ]; then
   NODE_PROMPT_="%{$fg_bold[blue]%}nvm:(%{$fg[green]%}\$(nvm current)%{$fg_bold[blue]%})%{$reset_color%} "
 fi
