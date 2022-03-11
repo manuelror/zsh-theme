@@ -11,6 +11,16 @@ Example:
 
 ![](theme.png)
 
+---
+
+### NOTE: The previous info will be displayed only if you alredy install the managers:
+
+- Ruby version with [RVM](https://rvm.io/) / [RBENV](https://github.com/rbenv/rbenv)
+- Node version with [NVM](https://github.com/nvm-sh/nvm)
+- Go version with [GVM](https://github.com/moovweb/gvm)
+
+---
+
 ## **Instalation**
 
 1.  Clone this repository
