@@ -4,6 +4,7 @@
 NEWLINE=$'\n'
 
 # Get the current ruby version in use with RVM or RBENV:
+RUBY_PROMPT_=""
 if [ -e ~/.rvm/bin/rvm-prompt ]; then
   RUBY_PROMPT_="%{$fg_bold[blue]%}rvm:(%{$fg[green]%}\$(~/.rvm/bin/rvm-prompt v g)%{$fg_bold[blue]%})%{$reset_color%} "
 else
@@ -19,7 +20,10 @@ if [ -e ~/.gvm/bin/gvm-prompt ]; then
 fi
 
 # Get the nvm version
-NODE_PROMPT_="%{$fg_bold[blue]%}nvm:(%{$fg[green]%}\$(nvm current)%{$fg_bold[blue]%})%{$reset_color%} "
+NODE_PROMPT_=""
+if [ -s "$NVM_DIR/nvm.sh" ]; then
+  NODE_PROMPT_="%{$fg_bold[blue]%}nvm:(%{$fg[green]%}\$(nvm current)%{$fg_bold[blue]%})%{$reset_color%} "
+fi
 
 # New line
 NEW_LINE_PROMPT_="$NEWLINE %(?:%{$fg_bold[green]%}↪ :%{$fg_bold[red]%}↪ )"
